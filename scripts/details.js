@@ -59,7 +59,7 @@ function addToCart (){
 	var orienSelected = orien.value;
 
 	var cost = generatePrice(false);
-	var cash = 0;
+	var cash = 0.00;
 	if (cost === "$9.00"){
 		cash = 9.00;
 	}
