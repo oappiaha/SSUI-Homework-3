@@ -59,13 +59,25 @@ function addToCart (){
 	var orienSelected = orien.value;
 
 	var cost = generatePrice(false);
+	var cash = 0;
+	if (cost === "$9.00"){
+		cash = 9.00;
+	}
+	if (cost === "$12.00"){
+		cash = 12.00;
+	}
+	if (cost === "$15.00"){
+		cash = 15.00;
+	}
+
 
 	var cartItem = {
 		name: item.title,
 		quantity: quantitySelected,
 		size: sizeSelected,
 		orientation: orienSelected,
-		price: cost
+		price: cost,
+		money: cash
 	};
 	cart = loadCart(true);
 	cart.push(cartItem);
@@ -87,7 +99,7 @@ function generatePrice(b = true){
 	var s = document.getElementById("size");
 	var size = s.value;
 
-	if (quantity === "9" && size == 'Medium'){
+	if (quantity === "15" && size == 'Medium'){
 		price = "$9.00";
 	}
 

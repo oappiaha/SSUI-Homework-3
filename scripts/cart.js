@@ -1,7 +1,7 @@
 function showCart(){
 
 	var cart = JSON.parse(localStorage.getItem("cart"));
-	
+	var total = 0.00;
 	if (cart.length === 0){
 		return 0;
 	}
@@ -34,6 +34,8 @@ function showCart(){
 		var remove = document.createTextNode("X");
 		col6.append(remove);
 
+		total += item.money;
+
 		table.appendChild(col1);
 		table.appendChild(col2);
 		table.appendChild(col3);
@@ -43,7 +45,20 @@ function showCart(){
 
 		fill.appendChild(table);
 
+
 	}
+	var last = document.getElementById("total");
+	var h = document.createElement("H2");
+	var sign = document.createTextNode("$");
+	var result = total.toString();
+	console.log("total",total)
+	var sum = document.createTextNode(result);
+
+	h.append(sign);
+	h.append(sum);
+	last.appendChild(h);
+
+
 	return cart.length;
 }
 
