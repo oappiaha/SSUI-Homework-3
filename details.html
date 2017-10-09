@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bun Bun Bake Shop</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script type= "text/javascript" src="scripts/todo.js"></script>
+  <script type= "text/javascript" src="scripts/details.js"></script>
+
+
+</head>
+
+<body onload="loadData()">
+  <div id="container">
+
+    <div id="top-area">
+        <header>
+          <h1>  Bun Bun Bake Shop</h1>
+        </header>
+        <nav>
+    				<a href="index.html">Home</a>
+    				<a href="products.html">Products</a>
+    				<a href="cart.html"> Cart</a>
+    		</nav>
+
+    </div>
+
+    <div class="content" onload="generatePrice()">
+      <div id="details">
+        <div id="fill">
+
+        </div>
+        
+
+    
+
+          <h4>Quantity:</h4>
+              <select id="quantity">
+                <option name="nine" value="9" onchange="generatePrice()">9</option>
+                <option name="twelve" value="12" onchange="generatePrice()">12</option>
+              </select>
+       
+          <h4>Size: </h4>
+            <select id="size">
+                <option name="medium" value="Medium" onchange="generatePrice()">Medium</option>
+                <option name="large" value="Large" onchange="generatePrice()">Large</option>
+              </select>
+
+          <h4>Orientation: </h4>
+            <select id="orien">
+              <option name="three" value="Three"> 3 x 3 </option>
+              <option name="four" value="Four">4 x 4</option>
+            </select>
+
+          <h2 onmouseenter="generatePrice()"  onmouseleave="removePrice()">Price: </h2>
+          <div id="price">
+            
+          </div>
+
+        <div class="buttona" onclick="addToCart()">
+          <p>Add to Cart</p>
+        </div>
+
+        <div class="button">
+          <p><a href="cart.html"> Checkout!</a></p>
+        </div>
+
+        <div id="alert">
+            <div class="alert">
+              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+              <strong>Added to Cart ! :)</strong>
+            </div>
+        </div>
+        
+
+      </div>
+      
+    </div>
+
+
+
+
+  </div>
+
+
+</body>
+
+<footer>
+  <br>
+  <br>
+  <p class="bottom-page">&copy; Bun Bun Bake Shop </p>
+</footer>
+
+</html>

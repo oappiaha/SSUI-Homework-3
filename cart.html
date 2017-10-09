@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bun Bun Bake Shop</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <script type= "text/javascript" src="scripts/todo.js"></script>
+  <script type= "text/javascript" src="scripts/cart.js"></script>
+</head>
+  <body  onload="showCart()">
+  <div id="container">
+
+    <div id="top-area">
+        <header>
+          <h1>  Bun Bun Bake Shop</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html"> Cart</a>
+        </nav>
+
+    </div>
+
+      <div id="content"> 
+        <h2>Your Buns!</h2>
+       
+        <table id = "cartTable" style="width:50%" align="center" >
+          <tr class="row_fill">
+            <td>
+              Name
+              <br>
+              <br>
+            </td>
+
+            <td>
+                Quantity
+                <br>
+              <br> 
+            </td>
+
+            <td>
+              Size
+              <br>
+              <br>
+            </td>
+
+            <td>
+              Orientation
+              <br>
+              <br>
+            </td>
+
+            <td>
+              Price
+              <br>
+              <br>
+            </td>
+
+            <td>
+              Remove
+              <br>
+              <br>
+            </td>
+
+          </tr>
+
+
+      </table>
+
+          <h2 class="carth2">Grand Total:</h2>
+          <div id="total">
+            
+          </div>
+
+        
+
+      </div>
+
+  </div>
+
+</body>
+
+<footer>
+  <br>
+  <br>
+  <p class="bottom-page">&copy; Bun Bun Bake Shop </p>
+</footer>
+
+</html>

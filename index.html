@@ -2,22 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My Awesome Store</title>
+  <title>Bun Bun Bake Shop</title>
 
   <!--The following line loads in your CSS style sheet-->
   <link rel="stylesheet" href="styles/index.css">
 
   <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
-  <link href="https://fonts.googleapis.com/css?family=Bad+Script|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
   <!--The following line loads in your JS script-->
-  <script src="js/todo.js"></script>
+  <script type= "text/javascript" src="scripts/details.js"></script>
+  <script type= "text/javascript" src="scripts/todo.js"></script>
+  
 </head>
-
 <body>
-  <h1>Welcome to my store!</h1>
-  <p>This store sells all kinds of items. We have old items and new items. Some items are more expensive than others.</p>
-  <img src="./resources/images/whatsInStore.png" class="starterImage" alt="a picture of a box that says what's in store for your store"></img>
-  <p>Feel free to delete this content! This is only to put down some html tags and css to get you started.</p>
+<div id="container">
+
+  <div id="top-area">
+      <header>
+        <h1>  Bun Bun Bake Shop</h1>
+      </header>
+      <nav>
+  				<a href="index.html">Home</a>
+  				<a href="products.html">Products</a>
+  				<a href="cart.html"> Cart</a>
+  		</nav>
+
+  </div>
+
+  <div id="image-span">
+    <img class = "span" src="resources/images/16.png">
+  </div>
+    
+     <table style="width:100%">
+      <tr>
+        <td height = "100" width = "200">
+          <h3>“Best Cinnamon Rolls <br> in the
+          Western Hemisphere.” <br> <br>
+          -The New Yorker
+          </h3>
+          <img src="resources/images/18.png" >
+        </td>
+
+        <td height = "100" width = "200">
+          <h3>Get Ready To Make<br>
+          Your Mouth Water!”
+           </h3>
+           <div id="button">
+              <a href="products.html">Shop Now!</a>
+           </div>
+        </td>
+
+        <td height = "100" width = "200">
+          <h3>"I just can't get <br> enough of the
+            Chunco Choco Roll!”<br> <br>  
+            -President Obama
+          </h3>
+          <img src="resources/images/19.png" >
+        </td>
+
+      </tr>
+    </table>
+
+    
+
+  </div>
+
 </body>
+
+  <footer>
+    <br>
+    <br>
+  	<p class="bottom-page">&copy; Bun Bun Bake Shop </p>
+	</footer>
+
 </html>
